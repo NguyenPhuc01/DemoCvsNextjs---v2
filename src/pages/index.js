@@ -12,8 +12,6 @@ export default function Home() {
     <>
       <Head>
         <title>Computer vision Việt Nam</title>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <h2 style={{ fontWeight: "bold" }}>Trang chủ</h2>
       <div>

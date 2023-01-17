@@ -1,4 +1,5 @@
-@import "~antd/dist/antd.css";
+/* @import "~antd/dist/antd.css"; */
+@import "antd/dist/antd.less";
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -127,4 +128,61 @@
 }
 .ant-menu-overflow-item {
   height: 45px !important;
+}
+.react-pdf__Document {
+  border-radius: 4px;
+  max-width: 100%;
+  position: relative;
+  background-color: white;
+  min-height: 392px;
+  // box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 4px;
+}
+
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.page-controls {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  background: white;
+  // opacity: 0;
+  opacity: 1;
+  transform: translateX(-50%);
+  transition: opacity ease-in-out 0.2s;
+  // box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 4px;
+
+  button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    font: inherit;
+    background: #fff !important;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  > span {
+    font: inherit;
+    font-size: 13px;
+    padding: 0 4px;
+  }
 }

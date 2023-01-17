@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Button } from "antd";
 import { Document, Page, pdfjs } from "react-pdf";
 import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
-import "./PreviewPDF.less";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
