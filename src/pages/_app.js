@@ -1,5 +1,4 @@
 import "../styles/globals.less";
-import "antd/dist/antd.less";
 import { SessionProvider, signIn, useSession } from "next-auth/react";
 import { NextAdapter } from "next-query-params";
 import { QueryParamProvider } from "use-query-params";

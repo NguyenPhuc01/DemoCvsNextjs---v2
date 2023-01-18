@@ -71,7 +71,7 @@ export default function Result({ result, type }) {
     "uy-nhiem-chi": <UyNhiemChi data={data2[currentPage]?.info} />,
     "dang-ky-bao-hiem": <DangKyBaoHiem data={data2[currentPage]?.info} />,
     "the-tong-quat": <VanBanScan data={data2[currentPage]?.result} />,
-    cv: <CV data={data} />,
+    cv: <CV data={data2} />,
     "giay-nop-tien": <GiayNopTien data={data2[currentPage]?.info} />,
     visa: <Visa data={data2[currentPage]?.info} />,
     "hop-dong-trai-phieu": <HopDongTraiPhieu data={data2[currentPage]?.info} />,
@@ -961,28 +961,29 @@ function TonThatXe({ data }) {
 }
 
 function CV({ data }) {
-  const { EDUCATION, EXPERIENCE, INFORMATION } = data;
-  const { CERT, GRAD = [], SPEC } = EDUCATION;
-  const { COMP = [], SKILL = [] } = EXPERIENCE;
-  const {
-    ADDRESS,
-    DOB,
-    EMAIL = [],
-    FACEBOOK = [],
-    GENDER,
-    HOME,
-    LINKEDIN = [],
-    NAME,
-    OTHER = [],
-    PHONE = [],
-  } = INFORMATION;
+  console.log("🚀 ~ file: Result.jsx:964 ~ CV ~ data", data);
+  // const { EDUCATION, EXPERIENCE, INFORMATION } = data;
+  // const { CERT, GRAD = [], SPEC } = EDUCATION;
+  // const { COMP = [], SKILL = [] } = EXPERIENCE;
+  // const {
+  //   ADDRESS,
+  //   DOB,
+  //   EMAIL = [],
+  //   FACEBOOK = [],
+  //   GENDER,
+  //   HOME,
+  //   LINKEDIN = [],
+  //   NAME,
+  //   OTHER = [],
+  //   PHONE = [],
+  // } = INFORMATION;
 
   return (
     <>
       <div style={{ color: "rgba(255,255,255,0.34)", padding: "12px 0" }}>
         -- THÔNG TIN --
       </div>
-      <Field name="Họ tên" value={NAME} />
+      {/* <Field name="Họ tên" value={NAME} />
       <Field name="Giới tính" value={GENDER} />
       <Field name="Ngày sinh" value={DOB} />
       <Field name="Địa chỉ" value={ADDRESS} />
@@ -1044,7 +1045,7 @@ function CV({ data }) {
         {COMP.map((item) => (
           <div className="field-value">{item}</div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }

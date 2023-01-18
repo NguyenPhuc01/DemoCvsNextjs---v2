@@ -6,6 +6,7 @@ function ImageRecognition(props) {
     <>
       <Head>
         <title>Xử lý hình ảnh</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <DemoPage3 />
     </>

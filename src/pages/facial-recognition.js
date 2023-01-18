@@ -6,6 +6,7 @@ function FaceMatching(props) {
     <>
       <Head>
         <title>Nhận diện khuôn mặt</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <DemoPage2 />
     </>

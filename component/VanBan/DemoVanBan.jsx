@@ -211,7 +211,7 @@ export default function DemoVanBan({ currentType, result, setResult }) {
               {(file || imageUrl) && (
                 <>
                   {showMenuTypes.includes(currentType) && (
-                    <div className="menus">
+                    <div className="menusss">
                       <Menu
                         mode="horizontal"
                         onClick={(e) => setCurrent(e.key)}

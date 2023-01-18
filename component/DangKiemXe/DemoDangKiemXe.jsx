@@ -55,7 +55,7 @@ export default function DemoDangKiemXe({ result, setResult }) {
       setLoading(true);
       axios({
         method: "post",
-        url: `${window.location.origin}/api/ocr/v2?type=dang-kiem-xe`,
+        url: `${window.location.origin}/api/ocr/v2?type=dang-kiem-xe&recaptchaToken=${recaptchaToken}`,
         data: formData,
       })
         .then((res) => {

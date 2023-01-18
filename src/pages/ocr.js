@@ -7,6 +7,7 @@ function ocr(props) {
     <>
       <Head>
         <title>Nhận diện ký tự</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
       <DemoPage />

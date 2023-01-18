@@ -56,7 +56,7 @@ export default function DemoBSX({ result, setResult }) {
       setLoading(true);
       axios({
         method: "post",
-        url: `${window.location.origin}/api/ocr/v2?type=bsx`,
+        url: `${window.location.origin}/api/ocr/v2?type=bsx&recaptchaToken=${recaptchaToken}`,
         data: formData,
       })
         .then((res) => {

@@ -16,7 +16,7 @@ import { useSession, signIn, signOut, getSession } from "next-auth/react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import globe from "../images/globe-outline.svg";
-import { DownOutlined, SmileOutlined } from "@ant-design/icons";
+import { DownOutlined, LogoutOutlined } from "@ant-design/icons";
 const layout = {
   wrapperCol: {
     span: 24,
@@ -54,9 +54,13 @@ const menu = (
               height: 36,
               fontSize: "14px",
               width: "100%",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
             }}
           >
             Logout
+            <LogoutOutlined />
           </Button>
         ),
       },

@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Computer vision Việt Nam</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <h2 style={{ fontWeight: "bold" }}>Trang chủ</h2>
       <div>

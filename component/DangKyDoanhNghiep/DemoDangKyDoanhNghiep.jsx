@@ -66,7 +66,7 @@ export default function DemoDangKyDoanhNghiep({ result, setResult }) {
       setLoading(true);
       axios({
         method: "post",
-        url: `${window.location.origin}/api/ocr/v2?type=dang-ky-doanh-nghiep`,
+        url: `${window.location.origin}/api/ocr/v2?type=dang-ky-doanh-nghiep&recaptchaToken=${recaptchaToken}`,
         data: formData,
       })
         .then((res) => {

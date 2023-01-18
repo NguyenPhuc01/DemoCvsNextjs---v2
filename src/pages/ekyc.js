@@ -6,6 +6,7 @@ function eKYC() {
     <>
       <Head>
         <title>Ekyc</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <DemoPage4 />
     </>
